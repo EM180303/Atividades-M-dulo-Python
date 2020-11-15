@@ -1,3 +1,4 @@
+print('Para uma divisão:')
 x = float(input('Digite o valor de x: '))
 y = float(input('Digite o valor de y: '))
 
