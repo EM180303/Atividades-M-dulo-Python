@@ -13,19 +13,22 @@ enforcou = False
 acertou = False
 erros = 0
 print(letras_acertadas)
+
 cont = 0
-cont2 = 0
+x = 0
 ver = False
 while(not enforcou and not acertou):
     chute = input("Qual letra? ")
+    x += 1
 
-    letras.append(chute)
-
-    for cont in letras:
-        for cont2 in cont:
-         if letras[cont] == letras[cont2]:
-          print('Você já escreveu essa letra!')
-          ver = True
+    if (chute in letras):
+      
+      print('Você já escreveu essa letra!')
+      
+      ver = True
+    else:
+     letras.append(chute)
+     ver = False
 
     if(chute in palavra_secreta):
         posicao = 0
