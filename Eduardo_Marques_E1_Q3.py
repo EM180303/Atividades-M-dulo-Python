@@ -5,6 +5,6 @@ frequencia = float(input('Qual a frequência do aluno em % ? '))
 
 media = ((n1 + n2 + n3) / 3)
 if frequencia >= 75 and media >= 7:
-    print('A média do aluno é: ', media, ' e ele está aprovado.')
+    print('A média do aluno é: ', media, ' e ele foi aprovado.')
 else:
-    print('A média do aluno é: ', media, ' e ele está reprovado.')
+    print('A média do aluno é: ', media, ' e ele foi reprovado.')
