@@ -1,5 +1,7 @@
 import math
+from test.test_import.data.unwritable import x
 letras = []
+
 print('*********************************')
 print('*** Jogo da Forca!***')
 print('*********************************')
@@ -11,9 +13,20 @@ enforcou = False
 acertou = False
 erros = 0
 print(letras_acertadas)
+cont = 0
+cont2 = 0
+ver = False
 while(not enforcou and not acertou):
     chute = input("Qual letra? ")
-    
+
+    letras.append(chute)
+
+    for cont in letras:
+        for cont2 in cont:
+         if letras[cont] == letras[cont2]:
+          print('Você já escreveu essa letra!')
+          ver = True
+
     if(chute in palavra_secreta):
         posicao = 0
         for letra in palavra_secreta:
@@ -21,7 +34,8 @@ while(not enforcou and not acertou):
                 letras_acertadas[posicao] = letra
             posicao = posicao + 1
     else:
-        erros += 1
+        if (ver == False):
+            erros += 1
         print('Você tem ', erros, 'erros')
     enforcou = erros == 6  # teste lógico
     acertou = '_' not in letras_acertadas
