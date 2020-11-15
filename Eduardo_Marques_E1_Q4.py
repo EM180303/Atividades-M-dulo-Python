@@ -58,7 +58,7 @@ while(not enforcou and not acertou):
     acertou = '_' not in letras_acertadas
     print(letras_acertadas)
 if(acertou):
-    print('Você ganhou!!')
+    print('Boa, você ganhou!!')
 else:
-    print('Você perdeu!!')
+    print('Lamento, você perdeu!!')
 print('Fim do jogo')
