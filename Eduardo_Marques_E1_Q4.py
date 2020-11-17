@@ -61,4 +61,5 @@ if(acertou):
     print('Boa, você ganhou!!')
 else:
     print('Lamento, você perdeu!!')
+    print('A palavra era : ', palavra_secreta)
 print('Fim do jogo')
