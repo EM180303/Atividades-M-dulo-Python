@@ -1,8 +1,10 @@
 import random
 import math
 from random import Random
+import os
 
 pontuação = 0
+
 print('*****Bem vindo!*****')
 print('Ao Jogo de Craps')
 
@@ -39,9 +41,15 @@ else :
        print('Primeiro dado: ',dado1)
        print('Segundo dado: ',dado2)
        print('Você tirou:',result2)
+       
        if (result2 == result):
            pontuação += 1
            print('Você fez um ponto')
            print('Pontuação: ',pontuação)
+       elif (result2 == 7):
+           print('Você perdeu!')
+           print('Você fez ',pontuação,' pontos')
+           verificador = True
+    
 
        
