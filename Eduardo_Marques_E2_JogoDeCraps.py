@@ -3,6 +3,14 @@ import math
 from random import Random
 print('*****Bem vindo!*****')
 print('Ao Jogo de Craps')
+
+pergunta = str(input('Quer ver as regras? (S para sim - N para não)'))
+pergunta = pergunta.upper()
+print(pergunta)
+if (pergunta == 'S'):
+    print('Regras:')
+    print('Você jogará 2 dados; Se a soma dos 2 for = 7 ou 11, você ganhou o jogo; se for = 3, 2 ou 12, você perdeu;se não for nenhum desses, o número dos   demais serão os seu ponto, você deve tirar ele novamente para pontuar, até que você tire 7 e o  jogo encerra')
+
 print('Preparado?')
 botao = input('Digite ENTER para jogar os dados')
 dado1 = (math.ceil(6 * random.random())) 
@@ -18,4 +26,9 @@ if ((result == 7) or (result == 11)):
 elif ((result == 2) or (result== 3) or (result == 12)):
  print('Craps')
  print('É uma pena, mas você perdeu.')
+else :
+   print('Para pontuar, você deve tirar:',result,' novamente.' )
+   verificador = False
+   while (verificador == False):
+       botao2 = input('Aperte ENTER para jogar os dados novamente')
  
