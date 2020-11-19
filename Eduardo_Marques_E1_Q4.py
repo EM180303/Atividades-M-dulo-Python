@@ -30,6 +30,7 @@ print(letras_acertadas)
 
 cont = 0
 x = 0
+
 ver = False
 while(not enforcou and not acertou):
     chute = input("Qual letra? ")
