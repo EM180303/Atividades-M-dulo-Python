@@ -35,7 +35,6 @@ ver = False
 while(not enforcou and not acertou):
     chute = input("Qual letra? ")
     x += 1
-
     if (chute in letras):
       
       print('Você já escreveu essa letra!')
