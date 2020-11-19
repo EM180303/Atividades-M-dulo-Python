@@ -15,7 +15,7 @@ frutas.append('manga')
 frutas.append('caju')
 frutas.append('abacate')
 
-f = (math.ceil(10 * random.random()))
+f =(math.ceil(10 * random.random()))
 print('*********************************')
 print('*** Jogo da Forca!***')
 print('*********************************')
