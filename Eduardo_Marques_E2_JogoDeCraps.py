@@ -1,6 +1,8 @@
 import random
 import math
 from random import Random
+
+pontuação = 0
 print('*****Bem vindo!*****')
 print('Ao Jogo de Craps')
 
@@ -30,5 +32,16 @@ else :
    print('Para pontuar, você deve tirar:',result,' novamente.' )
    verificador = False
    while (verificador == False):
-       botao2 = input('Aperte ENTER para jogar os dados novamente')
- 
+       botao = input('Digite ENTER para jogar os dados')
+       dado1 = (math.ceil(6 * random.random())) 
+       dado2 = (math.ceil(6 * random.random()))
+       result2 = (dado1 + dado2)
+       print('Primeiro dado: ',dado1)
+       print('Segundo dado: ',dado2)
+       print('Você tirou:',result2)
+       if (result2 == result):
+           pontuação += 1
+           print('Você fez um ponto')
+           print('Pontuação: ',pontuação)
+
+       
