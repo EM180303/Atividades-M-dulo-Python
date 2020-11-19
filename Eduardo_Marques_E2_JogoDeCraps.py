@@ -14,4 +14,8 @@ print('Você tirou:',result)
 
 if ((result == 7) or (result == 11)):
     print("Você é um Natural")
-    print('Parabéns! Você ganhou o jogo')
+    print('Parabéns! Você ganhou o jogo.')
+elif ((result == 2) or (result== 3) or (result == 12)):
+ print('Craps')
+ print('É uma pena, mas você perdeu.')
+ 
