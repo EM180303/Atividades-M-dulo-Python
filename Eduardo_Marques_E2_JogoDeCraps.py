@@ -11,3 +11,7 @@ result = (dado1 + dado2)
 print('Primeiro dado: ',dado1)
 print('Segundo dado: ',dado2)
 print('Você tirou:',result)
+
+if ((result == 7) or (result == 11)):
+    print("Você é um Natural")
+    print('Parabéns! Você ganhou o jogo')
