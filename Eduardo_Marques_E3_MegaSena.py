@@ -3,13 +3,12 @@ import math
 
 jogos = int(input('Quantos palpites você vai querer? '))
 
-Ltemp = []
+Numeros= []
 Palpites = []
 
-for c in range(jogos):
-    for i in range(6):
-        Ltemp.append(math.ceil(60 * random.random()))
+for i in range(1, 61):
+    Numeros.append(i)
 
-    Palpites = Ltemp[:]
-
-print(Palpites)
+for i in range(jogos):
+    Palpites = random.sample((Numeros), 6) 
+    print(f'Palpite {i + 1}°: ',sorted(Palpites))
