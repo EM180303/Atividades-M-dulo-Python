@@ -1,0 +1,1 @@
+jogos = int(input('Quantos palpites você vai querer? '))
