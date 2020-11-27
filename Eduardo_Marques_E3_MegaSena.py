@@ -12,3 +12,4 @@ for i in range(1, 61):
 for i in range(jogos):
     Palpites = random.sample((Numeros), 6) 
     print(f'Palpite {i + 1}°: ',sorted(Palpites))
+
