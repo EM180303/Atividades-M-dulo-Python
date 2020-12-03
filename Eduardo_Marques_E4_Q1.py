@@ -44,7 +44,6 @@ while (vencedor == False):
         return 'O computador esoclheu',jokenpo[jogada]
 
     print(jog_comput(escolha[2]))
-    print(escolha[2])
 
     time.sleep(2)
     os.system("cls")
